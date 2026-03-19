@@ -35,7 +35,15 @@ namespace WebBanHang.Interface
 
         public async Task UpdateAsync(Product product)
         {
-            _context.Products.Update(product);
+            var existing = await _context.Products.FindAsync(product.Id);
+            if (existing == null) return;
+
+            existing.Name = product.Name;
+            existing.Price = product.Price;
+            existing.Description = product.Description;
+            existing.CategoryId = product.CategoryId;
+            existing.ImageUrl = product.ImageUrl;
+
             await _context.SaveChangesAsync();
         }
 

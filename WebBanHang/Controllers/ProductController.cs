@@ -30,18 +30,39 @@ namespace WebBanHang.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(Product product)
+public async Task<IActionResult> Add(Product product, IFormFile imageFile)
+{
+    if (ModelState.IsValid)
+    {
+        if (imageFile != null && imageFile.Length > 0)
         {
-            if (ModelState.IsValid)
+            // tạo tên file tránh trùng
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+
+            // đường dẫn lưu
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+            // lưu file
+            using (var stream = new FileStream(path, FileMode.Create))
             {
-                await _productRepository.AddAsync(product);
-                return RedirectToAction(nameof(Index));
+                await imageFile.CopyToAsync(stream);
             }
 
-            var categories = await _categoryRepository.GetAllAsync();
-            ViewBag.Categories = new SelectList(categories, "Id", "Name");
-            return View(product);
+            // lưu vào DB
+            product.ImageUrl = "/images/" + fileName;
         }
+
+        await _productRepository.AddAsync(product);
+        return RedirectToAction(nameof(Index));
+    }
+
+    var categories = await _categoryRepository.GetAllAsync();
+    ViewBag.Categories = new SelectList(categories, "Id", "Name");
+
+    return View(product);
+}
+
+
 
         public async Task<IActionResult> Display(int id)
         {
@@ -55,6 +76,60 @@ namespace WebBanHang.Controllers
         {
             var product = await _productRepository.GetByIdAsync(id);
             if (product == null) return NotFound();
+
+            var categories = await _categoryRepository.GetAllAsync();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
+
+            return View(product);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(int id, Product product, IFormFile imageFile)
+        {
+            if (id != product.Id)
+                return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                // 🔥 LẤY DATA CŨ TỪ DB
+                var existingProduct = await _productRepository.GetByIdAsync(id);
+                if (existingProduct == null)
+                    return NotFound();
+
+                // cập nhật thông tin cơ bản
+                existingProduct.Name = product.Name;
+                existingProduct.Price = product.Price;
+                existingProduct.Description = product.Description;
+                existingProduct.CategoryId = product.CategoryId;
+
+                // nếu có upload ảnh mới
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+
+                    existingProduct.ImageUrl = "/images/" + fileName;
+                }
+                if (!ModelState.IsValid)
+                {
+                    foreach (var item in ModelState)
+                    {
+                        foreach (var error in item.Value.Errors)
+                        {
+                            Console.WriteLine(error.ErrorMessage);
+                        }
+                    }
+                }
+                // 🔥 update object đã xử lý
+                await _productRepository.UpdateAsync(existingProduct);
+
+                return RedirectToAction(nameof(Index));
+            }
 
             var categories = await _categoryRepository.GetAllAsync();
             ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
@@ -77,6 +152,7 @@ namespace WebBanHang.Controllers
 
         // POST: Delete
         [HttpPost, ActionName("Delete")]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _productRepository.DeleteAsync(id);
