@@ -1,78 +1,138 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\",
+  "WorkspaceRootPath": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\areas\\admin\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:areas\\admin\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\interface\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:interface\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\interface\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:interface\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\migrations\\20260320021645_extendidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:migrations\\20260320021645_extendidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Migrations\\20260320015331_AddIdentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260320015331_AddIdentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\product\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\interface\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:interface\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\interface\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:interface\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\interface\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\interface\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:interface\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|d:\\user\\asus\\onedrive\\desktop\\thuchanh_laptrinhweb_s6\\webbanhang\\webbanhang.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\webbanhang.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:webbanhang.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|m:\\thuchanh_laptrinhweb_s6\\webbanhang\\database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{C3CF8798-CBA9-499D-8E80-9F186EDA636A}|WebBanHang.csproj|solutionrelative:database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,137 +142,302 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T04:09:28.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SD.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Admin\\Models\\SD.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\SD.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Admin\\Models\\SD.cs",
+              "RelativeToolTip": "Areas\\Admin\\Models\\SD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T03:29:55.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-20T03:29:34.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T02:55:16.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowCMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T02:54:43.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAGoAAAAAAAAAAADwv3MAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T02:46:07.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAswIIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T02:45:25.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAiwM0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T02:28:10.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T02:26:35.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20260320021645_ExtendIdentityUser.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Migrations\\20260320021645_ExtendIdentityUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260320021645_ExtendIdentityUser.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Migrations\\20260320021645_ExtendIdentityUser.cs",
+              "RelativeToolTip": "Migrations\\20260320021645_ExtendIdentityUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T02:16:45.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T02:04:58.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "database.sql ",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\database.sql",
+              "RelativeDocumentMoniker": "database.sql",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\database.sql",
+              "RelativeToolTip": "database.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-20T02:01:47.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20260320015331_AddIdentity.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Migrations\\20260320015331_AddIdentity.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260320015331_AddIdentity.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Migrations\\20260320015331_AddIdentity.cs",
+              "RelativeToolTip": "Migrations\\20260320015331_AddIdentity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T01:53:31.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T01:51:30.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Update.cshtml",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Update.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Update.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Update.cshtml",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Update.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Update.cshtml",
               "RelativeToolTip": "Views\\Product\\Update.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAuwEoAAAAZAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-19T17:12:26.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Index.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Index.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwGgAAAAIAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-19T17:11:09.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "Display.cshtml",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Display.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Display.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Display.cshtml",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Display.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Display.cshtml",
               "RelativeToolTip": "Views\\Product\\Display.cshtml",
-              "ViewState": "AgIAADQAAAAAAAAAAAAYwEkAAAAGAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-13T03:43:55.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "EFProductRepository.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFProductRepository.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFProductRepository.cs",
               "RelativeDocumentMoniker": "Interface\\EFProductRepository.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFProductRepository.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFProductRepository.cs",
               "RelativeToolTip": "Interface\\EFProductRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwDkAAAANAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T02:09:44.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 26,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ErrorViewModel.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T02:04:30.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Delete.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Delete.cshtml",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Delete.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Delete.cshtml",
               "RelativeToolTip": "Views\\Product\\Delete.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAYwEwAAAAGAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-13T04:16:17.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\ProductController.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAYwH8AAAAsAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T02:49:19.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "Product.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Product.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Product.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T03:45:49.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 18,
               "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Add.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Add.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Add.cshtml",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Add.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Product\\Add.cshtml",
               "RelativeToolTip": "Views\\Product\\Add.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-13T03:33:43.117Z",
               "EditorCaption": ""
@@ -221,24 +446,24 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Program.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Program.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T02:47:14.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\ICategoryRepository.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Interface\\ICategoryRepository.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\ICategoryRepository.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\ICategoryRepository.cs",
               "RelativeToolTip": "Interface\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T02:07:16.62Z",
               "EditorCaption": ""
@@ -247,88 +472,92 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\appsettings.json",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\appsettings.json",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-19T13:28:13.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "ProductImage.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ProductImage.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "Models\\ProductImage.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ProductImage.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\ProductImage.cs",
               "RelativeToolTip": "Models\\ProductImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwAkAAAArAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T03:46:16.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 27,
               "Title": "Category.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Category.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Category.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Models\\Category.cs",
               "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T03:45:49.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 28,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\HomeController.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T02:02:52.478Z"
+              "WhenOpened": "2026-03-13T02:02:52.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 29,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-13T03:29:24.853Z"
+              "WhenOpened": "2026-03-13T03:29:24.853Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "EFCategoryRepository.cs",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFCategoryRepository.cs",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFCategoryRepository.cs",
               "RelativeDocumentMoniker": "Interface\\EFCategoryRepository.cs",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFCategoryRepository.cs",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\Interface\\EFCategoryRepository.cs",
               "RelativeToolTip": "Interface\\EFCategoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T02:19:59.135Z"
+              "WhenOpened": "2026-03-13T02:19:59.135Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 31,
               "Title": "WebBanHang.csproj",
-              "DocumentMoniker": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\WebBanHang.csproj",
+              "DocumentMoniker": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\WebBanHang.csproj",
               "RelativeDocumentMoniker": "WebBanHang.csproj",
-              "ToolTip": "D:\\user\\ASUS\\OneDrive\\Desktop\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\WebBanHang.csproj",
+              "ToolTip": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\WebBanHang.csproj",
               "RelativeToolTip": "WebBanHang.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-13T02:03:32.605Z"
+              "WhenOpened": "2026-03-13T02:03:32.605Z",
+              "EditorCaption": ""
             }
           ]
         }
