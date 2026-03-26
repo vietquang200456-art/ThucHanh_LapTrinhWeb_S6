@@ -1,105 +1,154 @@
 ﻿@model IEnumerable<WebBanHang.Models.Product>
 
 @{
-    ViewData["Title"] = "Product List";
+    ViewData["Title"] = "Product Store";
 }
 
-<div class="container mt-5">
-
-    <!-- HEADER -->
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="fw-bold text-primary">🛍 Product Store</h2>
-
-        <a asp-action="Add" class="btn btn-success px-4">
-            ➕ Add Product
-        </a>
+<div class="container py-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h2 class="fw-bold display-6 mb-0" style="color: #2b2d42;">🛍 Explore <span class="text-primary">Products</span></h2>
+            <p class="text-muted">Find the best deals for your needs</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-end gap-3 mt-3 mt-md-0">
+            <a asp-controller="Cart" asp-action="Index" class="btn btn-light btn-modern shadow-sm px-4">
+                🛒 <span class="ms-1">Cart</span>
+            </a>
+            @if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+            {
+                <a asp-action="Add" class="btn btn-primary btn-modern shadow-sm">
+                    ✨ Add New Product
+                </a>
+            }
+        </div>
     </div>
 
-    <!-- PRODUCT GRID -->
-    <div class="row">
-
+    <div class="row g-4">
         @foreach (var item in Model)
         {
-            <div class="col-md-3 mb-4">
-
-                <div class="card h-100 shadow-sm border-0 rounded-4 product-card">
-
-                    <!-- IMAGE -->
-                    <div class="overflow-hidden rounded-top-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card product-card h-100 border-0 shadow-sm">
+                    <div class="img-wrapper position-relative" style="height:220px;">
                         @if (!string.IsNullOrEmpty(item.ImageUrl))
                         {
-                            <img src="@item.ImageUrl"
-                                 class="card-img-top"
-                                 style="height:200px; object-fit:cover;" />
+                            <img src="~/images/@item.ImageUrl" class="card-img-top w-100" style="height:200px; object-fit:contain; background-color:#f8f9fa;" />
                         }
                         else
                         {
-                            <div class="text-center p-5 text-muted">No Image</div>
+                            <div class="d-flex align-items-center justify-content-center w-100 h-100 bg-light text-muted">
+                                <i class="bi bi-image"></i> No Image
+                            </div>
                         }
-                    </div>
-
-                    <!-- BODY -->
-                    <div class="card-body d-flex flex-column">
-
-                        <h6 class="fw-bold text-truncate">
-                            @item.Name
-                        </h6>
-
-                        <p class="text-danger fw-bold mb-2">
-                            @item.Price.ToString("N0") đ
-                        </p>
-
-                        <span class="badge bg-primary mb-2">
+                        <span class="badge category-badge position-absolute top-0 start-0 m-3 shadow-sm">
                             @item.Category?.Name
                         </span>
+                    </div>
 
-                        <p class="text-muted small text-truncate">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h6 class="fw-bold mb-2 text-dark text-truncate" style="font-size: 1.1rem;">@item.Name</h6>
+                        <p class="text-muted small mb-3 text-truncate-2" style="height: 40px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; white-space: normal;">
                             @item.Description
                         </p>
 
-                        <div class="mt-auto">
-
-                            <a asp-action="Display"
-                               asp-route-id="@item.Id"
-                               class="btn btn-outline-primary btn-sm w-100 mb-1">
-                                👁 View
-                            </a>
-
-                            <div class="d-flex gap-1">
-                                <a asp-action="Update"
-                                   asp-route-id="@item.Id"
-                                   class="btn btn-warning btn-sm w-50">
-                                    ✏️
-                                </a>
-
-                                <a asp-action="Delete"
-                                   asp-route-id="@item.Id"
-                                   class="btn btn-danger btn-sm w-50">
-                                    🗑
-                                </a>
-                            </div>
-
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <span class="price-text fw-bold">@item.Price.ToString("N0")<small>đ</small></span>
                         </div>
 
+                        <div class="mt-auto">
+                            <div class="d-flex gap-2 mb-2">
+                                <a asp-action="Display" asp-route-id="@item.Id" class="btn btn-outline-secondary btn-modern flex-grow-1 py-2">
+                                    Detail
+                                </a>
+                                @if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-light btn-modern text-warning shadow-sm">✏️</a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-light btn-modern text-danger shadow-sm">🗑</a>
+                                }
+                            </div>
+                            <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.Id" class="btn btn-cart btn-modern w-100 py-2">
+                                ➕ Add to Cart
+                            </a>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
         }
-
     </div>
-
 </div>
 
-<!-- STYLE -->
 <style>
+    :root {
+        --primary-color: #4361ee;
+        --secondary-color: #3f37c9;
+        --accent-color: #4cc9f0;
+        --card-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        --hover-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Card Styling */
     .product-card {
-        transition: 0.3s;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        border-radius: 20px !important;
+        background: #fff;
     }
 
         .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transform: translateY(-8px);
+            box-shadow: var-hover-shadow !important;
         }
+
+    /* Image Wrapper */
+    .img-wrapper {
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+    }
+
+    .product-card img {
+        transition: transform 0.6s ease;
+    }
+
+    .product-card:hover img {
+        transform: scale(1.1);
+    }
+
+    /* Badge */
+    .category-badge {
+        backdrop-filter: blur(4px);
+        background-color: rgba(67, 97, 238, 0.85) !important;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 10px;
+    }
+
+    /* Button Styling */
+    .btn-modern {
+        border-radius: 12px;
+        padding: 10px 20px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+
+    .btn-cart {
+        background: linear-gradient(135deg, #4361ee, #4cc9f0);
+        border: none;
+        color: white;
+    }
+
+        .btn-cart:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+            color: white;
+        }
+
+    /* Price tag */
+    .price-text {
+        font-size: 1.25rem;
+        letter-spacing: -0.5px;
+        color: #2b2d42;
+    }
 </style>

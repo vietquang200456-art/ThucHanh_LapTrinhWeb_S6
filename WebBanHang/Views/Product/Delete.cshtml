@@ -3,75 +3,133 @@
 @{
     ViewData["Title"] = "Delete Product";
 }
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <div class="card delete-card shadow-lg p-4 p-md-5">
 
-<div class="container mt-5">
+                <div class="row g-5">
+                    <div class="col-md-5">
+                        <div class="position-relative">
+                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                            {
+                                <img src="~/images/@Model.ImageUrl" class="product-preview-img shadow" alt="@Model.Name" />
+                            }
+                            else
+                            {
+                                <div class="bg-light d-flex align-items-center justify-content-center rounded-4" style="height: 250px;">
+                                    <span class="text-muted italic">No Image</span>
+                                </div>
+                            }
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-danger shadow-sm px-3 py-2 rounded-pill">DELETING</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="card shadow-lg border-0 rounded-4 p-4">
+                    <div class="col-md-7">
+                        <div class="alert-banner mb-4">
+                            <h4 class="text-danger fw-bold mb-1">⚠️ Cảnh báo xóa!</h4>
+                            <p class="small text-muted mb-0">Hành động này sẽ xóa vĩnh viễn sản phẩm khỏi hệ thống và không thể khôi phục.</p>
+                        </div>
 
-        <div class="row">
+                        <div class="mb-4">
+                            <span class="info-label d-block mb-1">Product Name</span>
+                            <h3 class="fw-bold text-dark">@Model.Name</h3>
+                        </div>
 
-            <!-- IMAGE -->
-            <div class="col-md-4 text-center">
-                @if (!string.IsNullOrEmpty(Model.ImageUrl))
-                {
-                    <img src="@Model.ImageUrl"
-                         class="img-fluid rounded-4 shadow-sm"
-                         style="max-height:250px; object-fit:cover;" />
-                }
-                else
-                {
-                    <p class="text-muted">No image</p>
-                }
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <span class="info-label d-block mb-1">Price</span>
+                                <p class="text-danger fw-bold fs-5 mb-0">@Model.Price.ToString("N0") đ</p>
+                            </div>
+                            <div class="col-6">
+                                <span class="info-label d-block mb-1">Category</span>
+                                <span class="badge bg-light text-primary border px-2 py-1">@Model.Category?.Name</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <span class="info-label d-block mb-1">Description Preview</span>
+                            <p class="text-muted small text-truncate-3">@Model.Description</p>
+                        </div>
+
+                        <hr class="my-4 opacity-50">
+
+                        <form asp-action="Delete">
+                            <input type="hidden" asp-for="Id" />
+
+                            <div class="d-flex flex-column flex-sm-row gap-3">
+                                <button type="submit" class="btn btn-delete-confirm btn-modern px-5 flex-grow-1">
+                                    🗑 Xác nhận xóa ngay
+                                </button>
+                                <a asp-action="Index" class="btn btn-light btn-modern border text-muted px-4">
+                                    Quay lại
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- INFO -->
-            <div class="col-md-8">
-
-                <h3 class="text-danger fw-bold">
-                    ⚠️ Xác nhận xoá sản phẩm
-                </h3>
-
-                <p class="text-muted">
-                    Hành động này không thể hoàn tác. Bạn có chắc muốn xoá sản phẩm này?
-                </p>
-
-                <hr />
-
-                <h4 class="fw-bold">@Model.Name</h4>
-
-                <p class="text-danger fs-5 fw-bold">
-                    @Model.Price.ToString("N0") đ
-                </p>
-
-                <span class="badge bg-primary mb-2">
-                    @Model.Category?.Name
-                </span>
-
-                <p class="text-muted">
-                    @Model.Description
-                </p>
-
-                <hr />
-
-                <!-- ACTION -->
-                <form asp-action="Delete">
-
-                    <input type="hidden" asp-for="Id" />
-
-                    <button type="submit" class="btn btn-danger me-2">
-                        🗑 Xoá ngay
-                    </button>
-
-                    <a asp-action="Index" class="btn btn-secondary">
-                        ❌ Huỷ
-                    </a>
-
-                </form>
-
-            </div>
-
         </div>
-
     </div>
-
 </div>
+<style>
+    :root {
+        --danger-gradient: linear-gradient(135deg, #ff4b2b, #ff416c);
+    }
+
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    .delete-card {
+        border-radius: 25px !important;
+        border: none;
+        overflow: hidden;
+    }
+
+    .alert-banner {
+        background-color: #fff5f5;
+        border-left: 5px solid #ff416c;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .product-preview-img {
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .btn-modern {
+        border-radius: 12px;
+        padding: 12px 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .btn-delete-confirm {
+        background: var(--danger-gradient);
+        color: white;
+        border: none;
+    }
+
+        .btn-delete-confirm:hover {
+            box-shadow: 0 8px 20px rgba(255, 65, 108, 0.3);
+            transform: translateY(-2px);
+            color: white;
+        }
+
+    .info-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #adb5bd;
+        letter-spacing: 1px;
+    }
+</style>

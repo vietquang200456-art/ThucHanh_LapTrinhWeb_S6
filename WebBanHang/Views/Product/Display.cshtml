@@ -3,72 +3,155 @@
 @{
     ViewData["Title"] = "Product Details";
 }
+<div class="container py-5">
+    <div class="mb-4">
+        <a asp-action="Index" class="text-decoration-none text-muted fw-semibold">
+            <span class="me-1">←</span> Back to Gallery
+        </a>
+    </div>
 
-<div class="container mt-5">
+    <div class="card details-card shadow-lg p-4 p-md-5">
+        <div class="row g-5">
 
-    <div class="card shadow-lg border-0 rounded-4 p-4">
-
-        <div class="row">
-
-            <!-- IMAGE -->
-            <div class="col-md-5 text-center">
-                @if (!string.IsNullOrEmpty(Model.ImageUrl))
-                {
-                    <img src="@Model.ImageUrl"
-                         class="img-fluid rounded-4 shadow-sm"
-                         style="max-height:350px; object-fit:cover;" />
-                }
-                else
-                {
-                    <div class="text-muted">No image</div>
-                }
+            <div class="col-md-5">
+                <div class="product-image-container shadow-sm p-2">
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <img src="~/images/@Model.ImageUrl" class="img-fluid rounded-4 w-100"
+                             style="max-height: 450px; object-fit: contain;" alt="@Model.Name" />
+                    }
+                    else
+                    {
+                        <div class="d-flex align-items-center justify-content-center bg-light rounded-4" style="height: 400px;">
+                            <span class="text-muted">No Image Available</span>
+                        </div>
+                    }
+                </div>
             </div>
 
-            <!-- INFO -->
             <div class="col-md-7">
+                <div class="ps-md-4">
+                    <span class="badge badge-category mb-3">
+                        @Model.Category?.Name
+                    </span>
 
-                <h2 class="fw-bold mb-3">@Model.Name</h2>
+                    <h1 class="fw-bold display-5 mb-3 text-dark">@Model.Name</h1>
 
-                <h4 class="text-danger fw-bold mb-3">
-                    @Model.Price.ToString("N0") đ
-                </h4>
+                    <div class="d-flex align-items-baseline mb-4">
+                        <h3 class="price-tag fw-bold mb-0">@Model.Price.ToString("N0")</h3>
+                        <span class="ms-1 fw-bold text-danger">đ</span>
+                    </div>
 
-                <span class="badge bg-primary mb-3">
-                    @Model.Category?.Name
-                </span>
+                    <div class="description-box mb-5">
+                        <h6 class="text-uppercase fw-bold text-dark small mb-2 tracking-wider">Description</h6>
+                        <p>@Model.Description</p>
+                    </div>
 
-                <p class="text-muted">
-                    @Model.Description
-                </p>
+                    <hr class="my-4 opacity-25">
 
-                <hr />
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.Id"
+                           class="btn btn-add-cart btn-modern px-5 flex-grow-1 flex-md-grow-0">
+                            🛒 Add to Cart
+                        </a>
 
-                <!-- ACTION BUTTONS -->
-                <div class="mt-4">
+                        @if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-light btn-modern text-warning border shadow-sm">
+                                ✏️ Edit
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-light btn-modern text-danger border shadow-sm">
+                                🗑 Delete
+                            </a>
+                        }
+                    </div>
 
-                    <a asp-action="Update"
-                       asp-route-id="@Model.Id"
-                       class="btn btn-warning me-2">
-                        ✏️ Edit
-                    </a>
-
-                    <a asp-action="Delete"
-                       asp-route-id="@Model.Id"
-                       class="btn btn-danger me-2">
-                        🗑 Delete
-                    </a>
-
-                    <a asp-action="Index"
-                       class="btn btn-secondary">
-                        ⬅ Back
-                    </a>
-
+                    <div class="mt-5 d-flex gap-4 border-top pt-4">
+                        <div class="d-flex align-items-center gap-2 small text-muted">
+                            <span class="fs-4">🚚</span>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 small text-muted">
+                            <span class="fs-4">🛡️</span>
+                            <span>1 Year Warranty</span>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
         </div>
-
     </div>
-
 </div>
+
+<style>
+    :root {
+        --primary-gradient: linear-gradient(135deg, #4361ee, #4cc9f0);
+    }
+
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    .details-card {
+        border-radius: 30px !important;
+        border: none;
+        overflow: hidden;
+        background: #ffffff;
+    }
+
+    .product-image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        background: #fdfdfd;
+        transition: transform 0.3s ease;
+    }
+
+        .product-image-container:hover {
+            transform: scale(1.02);
+        }
+
+    .badge-category {
+        backdrop-filter: blur(4px);
+        background-color: rgba(67, 97, 238, 0.1) !important;
+        color: #4361ee !important;
+        border: 1px solid rgba(67, 97, 238, 0.2);
+        padding: 8px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+    }
+
+    .price-tag {
+        font-size: 2rem;
+        letter-spacing: -1px;
+        color: #ef233c;
+    }
+
+    .description-box {
+        line-height: 1.8;
+        color: #64748b;
+        font-size: 1.05rem;
+    }
+
+    .btn-modern {
+        border-radius: 15px;
+        padding: 12px 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .btn-add-cart {
+        background: var(--primary-gradient);
+        color: white;
+        border: none;
+    }
+
+        .btn-add-cart:hover {
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.2);
+            transform: translateY(-2px);
+            color: white;
+        }
+</style>

@@ -180,7 +180,15 @@ namespace WebBanHang.Areas.Identity.Pages.Account
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+
+                        // 👑 ADMIN → vào trang quản lý
+                        if (await _userManager.IsInRoleAsync(user, SD.Role_Admin))
+                        {
+                            return RedirectToAction("Index", "Product", new { area = "Admin" });
+                        }
+
+                        // 👤 USER → về trang sản phẩm
+                        return RedirectToAction("Index", "Product");
                     }
                 }
                 foreach (var error in result.Errors)

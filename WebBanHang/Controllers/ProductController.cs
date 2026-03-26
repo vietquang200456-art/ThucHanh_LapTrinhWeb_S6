@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebBanHang.Interface;
 using WebBanHang.Models;
@@ -21,7 +22,7 @@ namespace WebBanHang.Controllers
             var products = await _productRepository.GetAllAsync();
             return View(products);
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddAsync()
         {
             var categories = await _categoryRepository.GetAllAsync();
@@ -30,7 +31,8 @@ namespace WebBanHang.Controllers
         }
 
         [HttpPost]
-public async Task<IActionResult> Add(Product product, IFormFile imageFile)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Add(Product product, IFormFile imageFile)
 {
     if (ModelState.IsValid)
     {
@@ -71,7 +73,7 @@ public async Task<IActionResult> Add(Product product, IFormFile imageFile)
 
             return View(product);
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -84,6 +86,7 @@ public async Task<IActionResult> Add(Product product, IFormFile imageFile)
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id, Product product, IFormFile imageFile)
         {
             if (id != product.Id)
@@ -138,6 +141,7 @@ public async Task<IActionResult> Add(Product product, IFormFile imageFile)
         }
 
         // GET: Delete
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -149,8 +153,8 @@ public async Task<IActionResult> Add(Product product, IFormFile imageFile)
 
             return View(product);
         }
-
         // POST: Delete
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
 
         public async Task<IActionResult> DeleteConfirmed(int id)
