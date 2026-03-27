@@ -1,5 +1,12 @@
 ﻿@model IEnumerable<WebBanHang.Models.Product>
+@using Microsoft.AspNetCore.Http
+@using WebBanHang.Helpers
+@inject IHttpContextAccessor HttpContextAccessor
 
+@{
+    var cart = HttpContextAccessor.HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart");
+    var count = cart?.Sum(i => i.Quantity) ?? 0;
+}
 @{
     ViewData["Title"] = "Product Store";
 }
@@ -11,8 +18,14 @@
             <p class="text-muted">Find the best deals for your needs</p>
         </div>
         <div class="col-md-6 d-flex justify-content-md-end gap-3 mt-3 mt-md-0">
-            <a asp-controller="Cart" asp-action="Index" class="btn btn-light btn-modern shadow-sm px-4">
-                🛒 <span class="ms-1">Cart</span>
+            <a asp-controller="Cart" asp-action="Index" class="btn btn-light btn-modern shadow-sm px-4 position-relative">
+                🛒 <span class="ms-1 d-none d-sm-inline">Cart</span>
+                @if (count > 0)
+                {
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shadow border border-white">
+                        @count
+                    </span>
+                }
             </a>
             @if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
             {

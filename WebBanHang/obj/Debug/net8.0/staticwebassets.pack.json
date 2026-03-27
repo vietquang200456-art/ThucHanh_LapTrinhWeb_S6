@@ -13,12 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\23331029-38fd-435c-969a-1b183af73f52.jpg",
+      "PackagePath": "staticwebassets\\images\\23331029-38fd-435c-969a-1b183af73f52.jpg"
+    },
+    {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\2ff4f5f2-dc89-4cb7-bde3-23e705072d93.jpg",
       "PackagePath": "staticwebassets\\images\\2ff4f5f2-dc89-4cb7-bde3-23e705072d93.jpg"
     },
     {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\36fcc4a8-82e9-4a62-a7c4-770921c345c3.jpg",
       "PackagePath": "staticwebassets\\images\\36fcc4a8-82e9-4a62-a7c4-770921c345c3.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\387d2d94-5930-452e-99a1-500e1264c093.jpg",
+      "PackagePath": "staticwebassets\\images\\387d2d94-5930-452e-99a1-500e1264c093.jpg"
     },
     {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\4ff3793e-4ead-4bb7-899a-7df2bba6c837.jpg",
@@ -37,6 +45,10 @@
       "PackagePath": "staticwebassets\\images\\airpod_pro.jpg"
     },
     {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\bc1017d6-583e-4ce4-8101-2e94e8bf62c3.jpg",
+      "PackagePath": "staticwebassets\\images\\bc1017d6-583e-4ce4-8101-2e94e8bf62c3.jpg"
+    },
+    {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\cde6bef1-4a51-432a-87d3-d38486b73039.png",
       "PackagePath": "staticwebassets\\images\\cde6bef1-4a51-432a-87d3-d38486b73039.png"
     },
@@ -45,8 +57,24 @@
       "PackagePath": "staticwebassets\\images\\chuot.jpg"
     },
     {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\d1adaf00-91f0-4c21-a2b5-3cca23e7faab.jpg",
+      "PackagePath": "staticwebassets\\images\\d1adaf00-91f0-4c21-a2b5-3cca23e7faab.jpg"
+    },
+    {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\d3b28507-028c-47e6-af5b-0242f155332d.jpg",
       "PackagePath": "staticwebassets\\images\\d3b28507-028c-47e6-af5b-0242f155332d.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\d636da0b-c1d8-44e8-a4c4-37c6572a2daf.jpg",
+      "PackagePath": "staticwebassets\\images\\d636da0b-c1d8-44e8-a4c4-37c6572a2daf.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\e67a716f-fc2f-4ef5-b703-c9e5eb0e54f3.jpg",
+      "PackagePath": "staticwebassets\\images\\e67a716f-fc2f-4ef5-b703-c9e5eb0e54f3.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\f74ef26f-b500-4be2-9ac6-63a7bb71d905.jpg",
+      "PackagePath": "staticwebassets\\images\\f74ef26f-b500-4be2-9ac6-63a7bb71d905.jpg"
     },
     {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\iphone15.jpg",

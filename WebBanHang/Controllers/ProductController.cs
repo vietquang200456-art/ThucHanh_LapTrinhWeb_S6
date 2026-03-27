@@ -51,7 +51,7 @@ namespace WebBanHang.Controllers
             }
 
             // lưu vào DB
-            product.ImageUrl = "/images/" + fileName;
+            product.ImageUrl = "" + fileName;
         }
 
         await _productRepository.AddAsync(product);
@@ -89,25 +89,27 @@ namespace WebBanHang.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id, Product product, IFormFile imageFile)
         {
-            if (id != product.Id)
-                return NotFound();
+            if (id != product.Id) return NotFound();
+
+            // 1. Xóa lỗi Validation của ImageUrl nếu có (vì chúng ta sẽ dùng ảnh cũ nếu ko upload mới)
+            ModelState.Remove("imageFile");
+            ModelState.Remove("ImageUrl");
 
             if (ModelState.IsValid)
             {
-                // 🔥 LẤY DATA CŨ TỪ DB
                 var existingProduct = await _productRepository.GetByIdAsync(id);
-                if (existingProduct == null)
-                    return NotFound();
+                if (existingProduct == null) return NotFound();
 
-                // cập nhật thông tin cơ bản
+                // 2. Cập nhật thông tin cơ bản
                 existingProduct.Name = product.Name;
                 existingProduct.Price = product.Price;
                 existingProduct.Description = product.Description;
                 existingProduct.CategoryId = product.CategoryId;
 
-                // nếu có upload ảnh mới
+                // 3. Xử lý ảnh
                 if (imageFile != null && imageFile.Length > 0)
                 {
+                    // Nếu có ảnh mới -> Lưu ảnh mới
                     var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
                     var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
 
@@ -115,31 +117,19 @@ namespace WebBanHang.Controllers
                     {
                         await imageFile.CopyToAsync(stream);
                     }
+                    existingProduct.ImageUrl = fileName; // Chỉ lưu tên file
+                }
+                // NẾU KHÔNG CÓ ẢNH MỚI: existingProduct.ImageUrl vẫn giữ nguyên giá trị cũ từ DB
 
-                    existingProduct.ImageUrl = "/images/" + fileName;
-                }
-                if (!ModelState.IsValid)
-                {
-                    foreach (var item in ModelState)
-                    {
-                        foreach (var error in item.Value.Errors)
-                        {
-                            Console.WriteLine(error.ErrorMessage);
-                        }
-                    }
-                }
-                // 🔥 update object đã xử lý
                 await _productRepository.UpdateAsync(existingProduct);
-
                 return RedirectToAction(nameof(Index));
             }
 
+            // Nếu lỗi Validation, load lại danh mục cho View
             var categories = await _categoryRepository.GetAllAsync();
             ViewBag.Categories = new SelectList(categories, "Id", "Name", product.CategoryId);
-
             return View(product);
         }
-
         // GET: Delete
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)

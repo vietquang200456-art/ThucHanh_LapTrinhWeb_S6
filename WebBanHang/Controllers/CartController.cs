@@ -73,5 +73,32 @@ namespace WebBanHang.Controllers
             HttpContext.Session.Remove("Cart");
             return RedirectToAction("Index");
         }
+        [HttpPost]
+        public IActionResult UpdateQuantity(int ProductId, string action)
+        {
+            List<CartItem> cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+            var item = cart.FirstOrDefault(x => x.ProductId == ProductId);
+
+            if (item != null)
+            {
+                if (action == "increase")
+                {
+                    // LỖI CŨ CỦA BẠN: item.Quantity = 0;
+                    item.Quantity++; // Phải là tăng lên 1
+                }
+                else if (action == "decrease")
+                {
+                    item.Quantity--;
+                    if (item.Quantity <= 0)
+                    {
+                        cart.Remove(item);
+                    }
+                }
+                HttpContext.Session.SetObjectAsJson("Cart", cart);
+            }
+
+            // Nó sẽ load lại trang Index của Cart
+            return RedirectToAction("Index");
+        }
     }
 }
