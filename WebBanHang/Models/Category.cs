@@ -8,6 +8,6 @@ namespace WebBanHang.Models
         public int Id { get; set; }
         [Required,StringLength(100)]
         public string Name { get; set; }
-        public List<Product> Products { get; set; }
+        public List<Product> Products { get; set; } = new List<Product>();
     }
 }

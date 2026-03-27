@@ -1,0 +1,70 @@
+﻿@model WebBanHang.Models.Category
+
+@{
+    ViewData["Title"] = "Delete Category";
+}
+
+<style>
+    .delete-card {
+        border-radius: 25px !important;
+        border: none;
+        background: #ffffff;
+    }
+
+    .btn-confirm {
+        background: #ef4444;
+        border: none;
+        border-radius: 12px;
+        color: white;
+        transition: all 0.3s;
+        padding: 12px;
+    }
+
+        .btn-confirm:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+            color: white;
+        }
+
+    .warning-box {
+        background: #fff1f2;
+        border-radius: 15px;
+        padding: 15px;
+        border-left: 5px solid #ef4444;
+    }
+</style>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="mb-4 text-center">
+                <a asp-action="Index" class="text-decoration-none text-muted small fw-bold">← Cancel and Go Back</a>
+            </div>
+
+            <div class="card delete-card shadow-lg p-4">
+                <div class="card-body text-center">
+                    <div class="display-4 mb-3">⚠️</div>
+                    <h3 class="fw-bold text-dark mb-2">Confirm Delete</h3>
+                    <p class="text-muted">Are you sure you want to remove this category?</p>
+
+                    <div class="warning-box text-start my-4">
+                        <div class="small text-muted text-uppercase fw-bold mb-1">Target Category</div>
+                        <div class="h5 fw-bold text-dark mb-1">@Model.Name</div>
+                        <div class="small text-danger">
+                            <i class="bi bi-info-circle"></i>
+                            This category contains <strong>@(Model.Products?.Count ?? 0)</strong> products.
+                        </div>
+                    </div>
+
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-confirm fw-bold">Permanently Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

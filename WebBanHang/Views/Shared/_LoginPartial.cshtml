@@ -1,27 +1,36 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@* Đảm bảo đã thêm namespace chứa ApplicationUser của bạn *@
+@using WebBanHang.Models
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
-<ul class="navbar-nav">
-@if (SignInManager.IsSignedIn(User))
-{
-    <li class="nav-item">
-        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Xin Chào @UserManager.GetUserName(User)!</a>
-    </li>
-    <li class="nav-item">
-        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Đăng xuất</button>
-        </form>
-    </li>
-}
-else
-{
-    <li class="nav-item">
-        <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Đăng ký</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
-    </li>
-}
+<ul class="navbar-nav align-items-center">
+    @* Thêm căn giữa cho đẹp *@
+    @if (SignInManager.IsSignedIn(User))
+    {
+        @* Lấy object user từ database *@
+        var currentUser = await UserManager.GetUserAsync(User);
+        var displayName = currentUser?.FullName ?? UserManager.GetUserName(User);
+
+        <li class="nav-item">
+            <a id="manage" class="nav-link fw-bold text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                <span class="me-1">👋</span> Xin chào, @displayName!
+            </a>
+        </li>
+        <li class="nav-item">
+            <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Product", new { area = "" })">
+                <button id="logout" type="submit" class="nav-link btn btn-link text-danger border-0 fw-semibold">Đăng xuất</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark fw-medium" id="register" asp-area="Identity" asp-page="/Account/Register">Đăng ký</a>
+        </li>
+        <li class="nav-item ms-lg-2">
+            <a class="nav-link btn btn-outline-primary px-3 rounded-pill" id="login" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
+        </li>
+    }
 </ul>

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<WebBanHang.Models.Category>
+@{
+    ViewData["Title"] = "Manage Categories";
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Categories Management</h2>
+            <p class="text-muted small">Manage your store product groups</p>
+        </div>
+        <a asp-action="Create" class="btn btn-create-category shadow-sm">
+            <span class="me-1">+</span> New Category
+        </a>
+    </div>
+
+    <div class="card category-card shadow-lg overflow-hidden border-0">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th style="width: 150px;" class="ps-4">ID</th>
+                        <th>Category Name</th>
+                        <th class="text-center">Products Count</th>
+                        <th class="text-end pe-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="ps-4 text-muted fw-bold">#@item.Id</td>
+                                <td>
+                                    <div class="category-name fw-semibold text-dark">@item.Name</div>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge bg-light text-primary rounded-pill px-3">
+                                        @(item.Products?.Count ?? 0) Items
+                                    </span>
+                                </td>
+                                <td class="text-end pe-4">
+                                    <div class="d-flex justify-content-end gap-2">
+                                        <a asp-action="Update" asp-route-id="@item.Id"
+                                           class="btn-action btn-edit-soft" title="Edit">
+                                            ✏️
+                                        </a>
+                                        <a asp-action="Delete" asp-route-id="@item.Id"
+                                           class="btn-action btn-delete-soft" title="Delete">
+                                            🗑
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center py-5">
+                                <div class="text-muted">
+                                    <p class="mb-0">No categories found.</p>
+                                    <small>Click "New Category" to start organizing your shop.</small>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

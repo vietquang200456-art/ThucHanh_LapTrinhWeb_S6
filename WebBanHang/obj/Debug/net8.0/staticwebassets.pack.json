@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\2ff4f5f2-dc89-4cb7-bde3-23e705072d93.jpg",
+      "PackagePath": "staticwebassets\\images\\2ff4f5f2-dc89-4cb7-bde3-23e705072d93.jpg"
+    },
+    {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\36fcc4a8-82e9-4a62-a7c4-770921c345c3.jpg",
       "PackagePath": "staticwebassets\\images\\36fcc4a8-82e9-4a62-a7c4-770921c345c3.jpg"
     },
@@ -25,12 +29,44 @@
       "PackagePath": "staticwebassets\\images\\95890360-4d5e-43e2-ae27-7ac389659970.jpg"
     },
     {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\a4b25d5d-821e-4531-91c7-3e1ca483e824.jpg",
+      "PackagePath": "staticwebassets\\images\\a4b25d5d-821e-4531-91c7-3e1ca483e824.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\airpod_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\airpod_pro.jpg"
+    },
+    {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\cde6bef1-4a51-432a-87d3-d38486b73039.png",
       "PackagePath": "staticwebassets\\images\\cde6bef1-4a51-432a-87d3-d38486b73039.png"
     },
     {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\chuot.jpg",
+      "PackagePath": "staticwebassets\\images\\chuot.jpg"
+    },
+    {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\d3b28507-028c-47e6-af5b-0242f155332d.jpg",
       "PackagePath": "staticwebassets\\images\\d3b28507-028c-47e6-af5b-0242f155332d.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\iphone15.jpg",
+      "PackagePath": "staticwebassets\\images\\iphone15.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\laptopdelxps13.jpg",
+      "PackagePath": "staticwebassets\\images\\laptopdelxps13.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\mac_air_m2.jpg",
+      "PackagePath": "staticwebassets\\images\\mac_air_m2.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\samsungs23.jpg",
+      "PackagePath": "staticwebassets\\images\\samsungs23.jpg"
+    },
+    {
+      "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\images\\xiaomi13.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi13.jpg"
     },
     {
       "Id": "M:\\ThucHanh_LapTrinhWeb_S6\\WebBanHang\\wwwroot\\js\\site.js",

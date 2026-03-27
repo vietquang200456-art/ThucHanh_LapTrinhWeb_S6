@@ -1,0 +1,87 @@
+﻿@model WebBanHang.Models.Category
+
+@{
+    ViewData["Title"] = "Update Category";
+}
+
+@* Tái sử dụng Style của trang Create *@
+<style>
+    .update-card {
+        border-radius: 25px !important;
+        border: none;
+        background: #ffffff;
+    }
+
+    .form-floating > .form-control {
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+    }
+
+        .form-floating > .form-control:focus {
+            border-color: #4361ee;
+            box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
+        }
+
+    .btn-update {
+        background: linear-gradient(135deg, #f59e0b, #fbbf24);
+        border: none;
+        border-radius: 12px;
+        color: white;
+        transition: all 0.3s;
+        padding: 12px;
+    }
+
+        .btn-update:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+            color: white;
+        }
+
+    .btn-back {
+        border-radius: 12px;
+        color: #64748b;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+</style>
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="mb-4">
+                <a asp-action="Index" class="btn-back small fw-bold">← Back to List</a>
+            </div>
+
+            <div class="card update-card shadow-lg p-3 p-md-4">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <div class="display-6 mb-2">📝</div>
+                        <h2 class="fw-bold text-dark">Update Category</h2>
+                        <p class="text-muted small">Modify category details (#@Model.Id)</p>
+                    </div>
+
+                    <form asp-action="Update" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="form-floating mb-4">
+                            <input asp-for="Name" class="form-control" placeholder="Name" autofocus />
+                            <label asp-for="Name" class="text-muted small">Category Name</label>
+                            <span asp-validation-for="Name" class="text-danger small"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-update fw-bold text-white">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

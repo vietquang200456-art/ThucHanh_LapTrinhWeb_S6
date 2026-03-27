@@ -1068,3 +1068,5 @@ D:\TH_Web\ThucHanh_LapTrinhWeb_S6\WebBanHang\obj\Debug\net8.0\WebBanHang.genrunt
 D:\TH_Web\ThucHanh_LapTrinhWeb_S6\WebBanHang\obj\Debug\net8.0\ref\WebBanHang.dll
 D:\TH_Web\ThucHanh_LapTrinhWeb_S6\WebBanHang\bin\Debug\net8.0\package-lock.json
 D:\TH_Web\ThucHanh_LapTrinhWeb_S6\WebBanHang\bin\Debug\net8.0\package.json
+M:\ThucHanh_LapTrinhWeb_S6\WebBanHang\bin\Debug\net8.0\package-lock.json
+M:\ThucHanh_LapTrinhWeb_S6\WebBanHang\bin\Debug\net8.0\package.json

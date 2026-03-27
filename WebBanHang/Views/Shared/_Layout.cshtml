@@ -5,46 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebBanHang</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* Thêm Google Font Inter *@
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebBanHang.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Product" asp-action="Index">WebBanHang</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Product" asp-action="Index">
+                    <span class="me-2">🛒</span>WebBanHang
+                </a>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1 ms-lg-4">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Add">Add</a>
+                            <a class="nav-link" asp-area="" asp-controller="Product" asp-action="Index">Shop</a>
                         </li>
+                        @if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" asp-area="" asp-controller="Category" asp-action="Index">Manage Categories</a>
+                            </li>
+                        }
                     </ul>
-                    <partial name="_LoginPartial"/>
+
+                    @* Khu vực Login/Register/User Info *@
+                    <div class="d-flex align-items-center">
+                        <partial name="_LoginPartial" />
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+
+    <div class="container mt-4">
+        <main role="main" class="pb-5">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - WebBanHang - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer text-muted">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 fw-bold">&copy; 2026 - <span class="text-primary">WebBanHang</span>. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a class="footer-link me-3" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+                    <a class="footer-link me-3" href="#">Terms</a>
+                    <a class="footer-link" href="#">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+<style>
+    :root {
+        --primary-gradient: linear-gradient(135deg, #4361ee, #4cc9f0);
+    }
+
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        color: #2b2d42;
+    }
+
+    /* Navbar Modern Style */
+    .navbar {
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+        padding: 15px 0;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-weight: 600;
+        color: #4a5568 !important;
+        margin: 0 10px;
+        position: relative;
+        transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+        color: #4361ee !important;
+    }
+
+    /* Footer Modern */
+    footer {
+        background: white;
+        padding: 40px 0;
+        margin-top: 100px;
+        border-top: 1px solid #e2e8f0 !important;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #94a3b8;
+        transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+        color: #4361ee;
+    }
+</style>
